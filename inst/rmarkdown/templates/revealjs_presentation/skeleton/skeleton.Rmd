@@ -1,9 +1,18 @@
 ---
 title: "Untitled"
-output: revealjs::revealjs_presentation
+author: Bruce Zhao
+date: "`r Sys.Date()`"
+output:
+  revealjs::revealjs_presentation:
+    incremental: true
+    theme: black
+    center: true
+    self_contained: false
+    lib_dir: libs
+    reveal_plugins: ["zoom","note"]
 ---
 
-## R Markdown
+## R Markdown {data-background-transition="zoom" data-background="#4d7e65" data-transition="fade"}
 
 This is an R Markdown presentation. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
@@ -15,15 +24,17 @@ When you click the **Knit** button a document will be generated that includes bo
 - Bullet 2
 - Bullet 3
 
+press "s" to open speaker notes.
+
+<aside class="notes">Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).</aside>
+
 ## Slide with R Code and Output
 
 ```{r}
 summary(cars)
 ```
 
-## Slide with Plot
+## Background with gif {data-background="http://i.giphy.com/90F8aUepslB84.gif"}
 
-```{r, echo=FALSE}
-plot(cars)
-```
 
+## Background with video {data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4"}
